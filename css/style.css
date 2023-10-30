@@ -1,0 +1,151 @@
+* {
+    font-family: 'Lato', sans-serif;
+    --redColor:hwb(0 5% 29%);
+    --whiteColor:#f8f9fa;
+}
+body {
+	background: var(--whiteColor);
+}
+.nav-item{
+    margin-left: 20px;
+}
+.section-padding {
+	padding: 100px 0;
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+    font-weight: bold;
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background:rgba(0, 0, 0, 0.15);
+    background-size: cover;
+    background-repeat: no-repeat;
+	z-index: 1;
+}
+.navbar .getstarted {
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	line-height: 2.3;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.nav-brand-two{
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    border: 5px solid var(--whiteColor);
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+   border-bottom: 5px solid var(--redColor);
+   color: var(--redColor);
+   transition: 0.4s;
+}
+
+
+
+.w-100 {
+	height: 100vh;
+}
+
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.portfolio .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.team .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.icon-media{
+   font-size: 25px;
+   margin-right: 5px;
+   color: black;
+}
+.icon-media:hover{
+	color:var(--redColor) ;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	.about-text {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
