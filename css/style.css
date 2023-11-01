@@ -108,7 +108,27 @@ body {
 .icon-media:hover{
 	color:var(--redColor) ;
 }
+/* --------- FAQ page ---------- */
+.faq {
+    border-bottom: 3px #000 solid;
+    cursor: pointer;
+	margin-top: 20px;
+}
 
+.reponse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s; 
+}
+.reponse p{
+	font-size: 1.5rem;
+}
+
+.faq.active .reponse {
+    max-height: 300px;
+}
+
+/* ---------- end FAQ ------------- */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.carousel-caption {
 		bottom: 370px;
