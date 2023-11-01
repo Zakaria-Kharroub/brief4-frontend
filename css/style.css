@@ -108,6 +108,7 @@ body {
 .icon-media:hover{
 	color:var(--redColor) ;
 }
+
 /* --------- FAQ page ---------- */
 .faq {
     border-bottom: 3px #000 solid;
@@ -127,7 +128,6 @@ body {
 .faq.active .reponse {
     max-height: 300px;
 }
-
 /* ---------- end FAQ ------------- */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.carousel-caption {
@@ -170,98 +170,4 @@ body {
 	}
 }
 
-/* styling contact page "MARYEM"  */
 
-/* style for hero section */
-.text-center{
-    position: absolute;
-    top: 50%;
-    left: 40%; 
-    font-size: 5em;
-    color: #083E4E;
-}
-#title-h2{
-    position: absolute;
-    top: 65%;
-    left: 40%; 
-    font-size: 1.5em;
-    color: #083E4E;
-}
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    bottom: 30%;
-}
-
-.image-container {
-    flex: 1;
-    margin-top: 15%;
-}
-
-.form-container {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 20%;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-cntrl{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.form-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#custom-btn {
-    background-color: #B40C0C;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#custom-btn:hover {
-    background-color: #8c0a0a;
-}
-.custom-section {
-    background-color: #BCE0DA; 
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-content {
-    text-align: center;
-    font-size: 24px; 
-    font-weight: bolder;
-    color: #083E4E;
-}
-
-.about-button {
-    background-color: #B40C0C; 
-    color: #fff;
-    padding: 10px 20px; 
-    border: none;
-    border-radius: 5px; 
-    font-size: 18px;
-    text-decoration: none;
-    top: 5%;
-}
-.Custom-bg{
-background-image: url('imgmym.jpg');
-}
-/* styling contact page "MARYEM"  */
