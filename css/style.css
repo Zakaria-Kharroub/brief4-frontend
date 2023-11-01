@@ -119,7 +119,9 @@ footer{
     cursor: pointer;
 	margin-top: 20px;
 }
-
+.question i{
+	font-size: 1.7rem;
+}
 .reponse {
     max-height: 0;
     overflow: hidden;
@@ -127,6 +129,8 @@ footer{
 }
 .reponse p{
 	font-size: 1.5rem;
+	color: rgb(106, 106, 106);
+	margin-top: 20px;
 }
 
 .faq.active .reponse {
@@ -181,6 +185,17 @@ footer{
 	}
 	.carousel{
 		display: none;
+	}
+
+	/* fa1 responsive */
+	.question h3{
+		font-size: 20px;
+	}
+	.question i{
+		font-size: 1.3rem;
+	}
+	.reponse p{
+		font-size:15px;
 	}
 	
 }
