@@ -16,59 +16,82 @@
 
     <!-- icon font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="index.html" style="color: #1F2532;"><span style="color: #B40C0C;" class="nav-brand-two">You</span>Meubles</a> 
-                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link navigation" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ml-5 navigation" href="#" >Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <form class="d-flex" style="padding-top: 5px;">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                              </form>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ml-5 navigation" href="login.html" >login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ml-5 navigation" href="singUp.html" >register</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- hero section -->
-        <figure style="background-image: url('/images/hero.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 150vh; margin-top: 40px;">
-            <div class="text-center" style="position: absolute; top: 60%; left: 55%; transform: translate(-50%, -50%); font-size: 9em; color: #B40C0C;">Contact</div>
-        </figure>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html" style="color: #1F2532;"><span style="color: #B40C0C;" class="nav-brand-two">You</span>Meubles</a> 
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					
+					<li class="nav-item">
+						<a class="nav-link navigation" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link ml-5 navigation" href="contact.html" >Contact</a>
+					</li>
+					<li class="nav-item">
+						<form class="d-flex" style="padding-top: 5px;">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                          </form>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link ml-5 navigation" href="login.html" >login</a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link ml-5 navigation" href="singUp.html" >register</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+       <!-- hero section -->
+       <figure style="background-image: url('/images/hero.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 150vh; margin-top: 40px;"></figure>
     </header>
     <main>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Service client</h1>
-                        <p>Pour les demandes de renseignements des consommateurs concernant YouMeubles Store, veuillez nous contacter au +212698764591 ou nous envoyer un e-mail à <a href="#" style="text-decoration: underline; color: #083E4E;">YouMeubles@gmail.com</a></p>
+        <div class="flex-container">
+            <section class="hero-section">
+                <h1 class="text-center">Contact us</h1>
+                <h2 id="title-h2" class="text-center">Nous serions ravis de vous assister</h2>
+            </section>
+            <figure class="image-container">
+                <img src="/images/image.png">
+                <img src="/images/tele.png">
+                <img src="/images/email.png">
+            </figure>
+            <aside class="form-container">
+                <h3>Nous sommes là pour vous!<br>Comment pouvons-nous vous aider?</h3>
+                <form action="/action_page.php" class="was-validated">
+                    <div class="form-group">
+                        <label for="fname">Nom et Prénom</label>
+                        <input type="text" id="fname" name="fname" class="form-cntrl" placeholder="Votre prénom..">
                     </div>
-                    <div class="col-md-6">
-                        <h2>Demande des informations sur les produits ou poser des questions</h2>
-                        <p>Pour toutes demandes commerciales, veuillez nous appeler au 31 70 221 3007 ou cliquez sur le bouton ci-dessous pour envoyer un e-mail.</p>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name "email" class="form-cntrl" placeholder="Votre email..">
                     </div>
-                </div>
-            </div>
-        </section>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" class="form-select">
+                            <option value="1">Renseignements sur les produits</option>
+                            <option value="2">Question concernant les produits</option>
+                            <option value="3">Autres</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-cntrl" placeholder="Votre message.." style="height:200px"></textarea>
+                    </div>
+                    <button type="submit" id="custom-btn" class="btn btn-danger">Envoyer</button>
+                </form>
+            </aside>
+        </div>
        
+        <div class="Custom-bg"></div>
     </main>
 </body>
 </html>
