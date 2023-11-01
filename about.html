@@ -13,13 +13,13 @@
         <!-- link bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
         <!-- link css -->
-        <link href="css/style.css" rel="stylesheet">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
     
         <!-- icon font awesome link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     </head>
 <body>
-    <header>
+    <!-- <header class="mb-6">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html" style="color: #1F2532;"><span style="color: #B40C0C;" class="nav-brand-two">You</span>Meubles</a> 
@@ -49,20 +49,22 @@
                 </div>
             </div>
         </nav>
-        <!-- hero section -->
-    </header>
-    <section class="container-fluid row" >
-        <div class="col-6 bg-primary margin0">
+    </header> -->
+    <section class="container-fluid d-flex mt-6" >
+        <div class="bg-primary w-50">
             <p class="text-bg-danger text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste deleniti corrupti obcaecati placeat aut facilis fuga nostrum doloremque necessitatibus eum similique ut totam, cumque rerum enim. Accusamus quidem labore iure.</p>
         </div>
-        <div class="col-6">
-            <img src="images/sec1img.png" alt="yellow chair in a nice room">
+        <div class="w-50">
+            <img src="images/sec1img.png" class="w-100" alt="yellow chair in a nice room">
         </div>
     </section>
-    <section class="second-section">
-        <div class="picdescription">
-            <h2 class="values">We believe in these values ==></h2>
-            <ul class="list-group list-group-flush">
+    <section class="container-fluid d-flex gap-2">
+        <div class="w-50">
+            <img src="images/sec2img.jpg" class="w-100" alt="yellow chair in a nice room">
+        </div>
+        <div class="w-50 d-flex align-items-center flex-column justify-content-center gap-5">
+            <h2 class="display-2">We believe in these values</h2>
+            <ul class="list-group list-group-flush display-1">
                 <li class="list-group-item list-group-item-primary">Quality</li>
                 <li class="list-group-item list-group-item-secondary">Design Excellence</li>
                 <li class="list-group-item list-group-item-success">Sustainability</li>
@@ -70,10 +72,88 @@
                 <li class="list-group-item list-group-item-warning">Affordability</li>
               </ul>
         </div>
-        <div class="sectionOneimg">
-            <img src="images/sec2img.jpg" alt="yellow chair in a nice room">
-        </div>
+        
     </section>
+    <!-- team starts -->
+	<section class=" bg-danger pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="w-100">
+					<div class=" d-flex flex-column align-items-center text-white text-center">
+						<h2 class="display-3 pt-5">Our Team</h2>
+						<p class="display-6 pb-5">Pixel Warriors</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="images/profile-taha.jpg">
+							<h3 class="card-title py-2">Taha Amnay Allam</h3>
+							<p class="card-text ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+							<p class="socials">
+								 <a href="" class=" icon-media"><i class="fa-brands fa-github"></i></a>
+								 <a href="" class=" icon-media"><i class="fa-brands fa-linkedin-in"></i></a> 
+								 <!-- profile intranet -->
+								 <a href="" class="icon-media"><i class="fa-solid fa-network-wired"></i></a>
+								 <a href="" class="icon-media"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="images/profile-zakaria.jpg">
+							<h3 class="card-title py-2">Zakaria Kharroub</h3>
+							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+							<p class="socials">
+								 <a href="" class=" icon-media"><i class="fa-brands fa-github"></i></a>
+								 <a href="" class=" icon-media"><i class="fa-brands fa-linkedin-in"></i></a> 
+								 <!-- profile intranet -->
+								 <a href="" class="icon-media"><i class="fa-solid fa-network-wired"></i></a>
+								 <a href="" class="icon-media"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="images/profile-meriem.jpg">
+							<h3 class="card-title py-2">Maryem Khaoua</h3>
+							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+							<p class="socials">
+								 <a href="" class=" icon-media"><i class="fa-brands fa-github"></i></a>
+								 <a href="" class=" icon-media"><i class="fa-brands fa-linkedin-in"></i></a> 
+								 <!-- profile intranet -->
+								 <a href="" class="icon-media"><i class="fa-solid fa-network-wired"></i></a>
+								 <a href="" class="icon-media"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="images/profil-abdelali.jpg">
+							<h3 class="card-title py-2">Abdelaali Ouhmou</h3>
+							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+							<p class="socials">
+								 <a href="" class=" icon-media"><i class="fa-brands fa-github"></i></a>
+								 <a href="" class=" icon-media"><i class="fa-brands fa-linkedin-in"></i></a> 
+								 <!-- profile intranet -->
+								 <a href="" class="icon-media"><i class="fa-solid fa-network-wired"></i></a>
+								 <a href="" class="icon-media"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> 
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
