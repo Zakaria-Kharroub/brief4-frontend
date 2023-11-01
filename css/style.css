@@ -108,7 +108,10 @@ body {
 .icon-media:hover{
 	color:var(--redColor) ;
 }
-
+/* footer */
+footer{
+	display: flex;
+}
 /* --------- FAQ page ---------- */
 
 .faq {
@@ -169,6 +172,17 @@ body {
 	.card {
 		margin-bottom: 30px;
 	}
+	.footer-img{
+		display: none;
+	}
+	footer{
+		display: block;
+		text-align: center;
+	}
+	.carousel{
+		display: none;
+	}
+	
 }
 
 
