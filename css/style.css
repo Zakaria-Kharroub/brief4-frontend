@@ -139,8 +139,7 @@ footer{
 
 /* popUp */
 .popUp-section{
-	/* background-color: #efefef; */
-	box-shadow: 6px 0px 0px 500px #efefef;
+	box-shadow: 6px 0px 0px 550px #efefef;
 	position: absolute; 
 	top: 25%; 
 	position: fixed;
