@@ -136,6 +136,39 @@ footer{
 .faq.active .reponse {
     max-height: 300px;
 }
+
+/* popUp */
+.popUp-section{
+	/* background-color: #efefef; */
+	box-shadow: 6px 0px 0px 500px #efefef;
+	position: absolute; 
+	top: 25%; 
+	position: fixed;
+	left: 32%; 
+	width: 40%;
+	z-index: 1000;
+	display: flex; 
+	flex-direction:
+	column; opacity: 100%;
+	display: none;
+}
+.close-btn{
+	cursor: pointer; 
+	align-self: flex-end;
+	color: var(--whiteColor);
+	background-color: #000;
+	border-radius: 90%;
+	transition: 0.3s;
+}
+.popUp-section.active{
+	display: flex;
+	transition:0.3s;
+}
+
+
+
+
+/* end  popup */
 /* ---------- end FAQ ------------- */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.carousel-caption {
