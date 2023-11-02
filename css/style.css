@@ -84,7 +84,7 @@ body {
 
 
 
-.w-100 {
+.carousel-item .w-100 {
 	height: 100vh;
 }
 
@@ -94,7 +94,7 @@ body {
 	line-height: 0.3;
 	background: #fff;
 }
-.portfolio .card {
+.products .card {
 	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
 .team .card {
@@ -108,7 +108,67 @@ body {
 .icon-media:hover{
 	color:var(--redColor) ;
 }
+/* footer */
+footer{
+	display: flex;
+}
+/* --------- FAQ page ---------- */
 
+.faq {
+    border-bottom: 3px #000 solid;
+    cursor: pointer;
+	margin-top: 20px;
+}
+.question i{
+	font-size: 1.7rem;
+}
+.reponse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s; 
+}
+.reponse p{
+	font-size: 1.5rem;
+	color: rgb(106, 106, 106);
+	margin-top: 20px;
+}
+
+.faq.active .reponse {
+    max-height: 300px;
+}
+
+/* popUp */
+.popUp-section{
+	box-shadow: 6px 0px 0px 550px #efefef;
+	position: absolute; 
+	top: 25%; 
+	position: fixed;
+	left: 32%; 
+	width: 40%;
+	z-index: 1000;
+	display: flex; 
+	flex-direction:
+	column; opacity: 100%;
+	display: none;
+}
+.close-btn{
+	cursor: pointer; 
+	align-self: flex-end;
+	color: var(--whiteColor);
+	background-color: #000;
+	border-radius: 90%;
+	transition: 0.3s;
+}
+.popUp-section.active{
+	display: flex;
+	transition:0.3s;
+}
+
+
+
+
+/* end  popup */
+/* ---------- end FAQ ------------- */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.carousel-caption {
 		bottom: 370px;
@@ -148,4 +208,29 @@ body {
 	.card {
 		margin-bottom: 30px;
 	}
+	.footer-img{
+		display: none;
+	}
+	footer{
+		display: block;
+		text-align: center;
+	}
+	.carousel{
+		display: none;
+	}
+
+	/* fa1 responsive */
+	.question h3{
+		font-size: 20px;
+	}
+	.question i{
+		font-size: 1.3rem;
+	}
+	.reponse p{
+		font-size:15px;
+	}
+	
 }
+
+
+

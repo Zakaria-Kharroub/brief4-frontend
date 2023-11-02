@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>HOME</title> 
+	<title>FAQ</title> 
 
     <!-- link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,7 @@
 
 </head>
 <body>
+	<!-- start nav -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="index.html" style="color: #1F2532;"><span style="color: #B40C0C;" class="nav-brand-two">You</span>Meubles</a> 
@@ -28,7 +29,7 @@
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					
 					<li class="nav-item">
-						<a class="nav-link navigation" href="#">About</a>
+						<a class="nav-link navigation" href="about.html">About</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link ml-5 navigation" href="contact.html" >Contact</a>
@@ -49,7 +50,9 @@
 			</div>
 		</div>
 	</nav>
+	<!-- end nav -->
 
+	<!-- carousel -->
 	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
 		<div class="carousel-indicators">
 			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
@@ -81,7 +84,10 @@
 				</div>
 			</div>
 		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
-	</div><!-- about section starts -->
+	</div>
+	<!-- end carousel -->
+	
+	<!-- about -->
 	<section class="about section-padding" id="about">
 		<div class="container">
 			<div class="row">
@@ -92,14 +98,41 @@
 					<div class="about-text">
 						<h2>Nous fournissons les meilleurs services de <br>
                             qualité jamais créés</h2>
+							
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, labore reiciendis. Assumenda eos quod animi! Soluta nesciunt inventore dolores excepturi provident, culpa beatae tempora, explicabo corporis quibusdam corrupti. Autem, quaerat. Assumenda quo aliquam vel, nostrum explicabo ipsum dolor, ipsa perferendis porro doloribus obcaecati placeat natus iste odio est non earum?</p>
-                        <a class="btn btn-danger" href="#">voir plus</a>
+                        <button class="btn btn-danger" onclick="togglePopup()">voir</button>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section><!-- about section Ends -->
-	<!-- services section Starts -->
+	</section>
+
+	<!-- popUp -->
+		<section class="popUp-section bg-light p-3 rounded"id="pop">
+
+			<i class="fa-solid fa-x p-2 close-btn" onclick="togglePopup()"></i>
+			<div class="product-price-popup d-flex mt-2 " style="justify-content: space-between;" >
+				<h2>title product</h2>
+				<h2>$ <span>20.00</span></h2>
+
+			</div>
+			<div class="images-popup d-flex justify-content-center gap-2 mt-2" >
+				<img src="images/img-integreter.jpg" alt="" width="30%" height="150px">
+				<img src="images/img-surabilite.jpg" alt="" width="30%" height="150px">
+				<img src="images/img-qualite.jpg" alt="" width="30%" height="150px">
+	
+			</div> 
+			<div class="description-popup mt-3" >
+				<h4>description</h4>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime corrupti rerum mollitia praesentium suscipit, ut ipsa ad enim provident harum.</p>
+				<a href="description.html" class="btn-danger text-decoration-none rounded  p-2 ">view plus de details</a>
+			</div>
+			
+		</section>
+	    
+	
+
+	<!-- service -->
 	<section class="services section-padding" id="services">
 		<div class="container">
 			<div class="row">
@@ -144,9 +177,11 @@
 				</div>
 			</div>
 		</div>
-	</section><!-- services section Ends -->
-	<!-- portfolio strats -->
-	<section class="portfolio section-padding" id="portfolio">
+	</section>
+	
+
+	<!-- profile -->
+	<section class="products section-padding" >
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -164,7 +199,7 @@
 							<div class="img-area mb-4"><img alt=""  src="images/img-product-1.jpg" width="100%" height="350px" ></div>
 							<h3 class="card-title">modern living room interior</h3>
 							<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
-                            <button class="btn btn-danger">voir plus</button>
+							<button class="btn btn-danger" onclick="togglePopup()">voir</button>
 						</div>
 					</div>
 				</div>
@@ -174,7 +209,7 @@
 							<div class="img-area mb-4"><img alt=""  src="images/img-product-2.jpg"  width="100%" height="350px"></div>
 							<h3 class="card-title">modern living room interior</h3>
 							<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
-                            <button class="btn btn-danger">voir plus</button>
+                            <button class="btn btn-danger" onclick="togglePopup()">voir</button>
 						</div>
 					</div>
 				</div>
@@ -184,15 +219,17 @@
 							<div class="img-area mb-4"><img alt="" src="images/img-product-3.jpg"  width="100%" height="350px"></div>
 							<h3 class="card-title">modern living room interior</h3>
 							<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
-                            <button class="btn btn-danger">voir plus</button>
+                            <button class="btn btn-danger" onclick="togglePopup()">voir</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section><!-- portfolio ends -->
-	<!-- team starts -->
-	<section class="team section-padding" id="team">
+	</section>
+	
+	
+	<!-- team -->
+	<section class="team section-padding">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -208,7 +245,7 @@
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="card text-center">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="images/profile-taha.jpg">
+							<img alt="" class="img-fluid rounded-circle" src="images/profile-taha.png">
 							<h3 class="card-title py-2">Taha Amnay Allam</h3>
 							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
 							<p class="socials">
@@ -224,7 +261,7 @@
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="card text-center">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="images/profile-zakaria.jpg">
+							<img alt="" class="img-fluid rounded-circle" src="images/profile-zakaria.png">
 							<h3 class="card-title py-2">Zakaria Kharroub</h3>
 							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
 							<p class="socials">
@@ -240,7 +277,7 @@
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="card text-center">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="images/profile-meriem.jpg">
+							<img alt="" class="img-fluid rounded-circle" src="images/profile-meriem.png">
 							<h3 class="card-title py-2">Maryem Khaoua</h3>
 							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
 							<p class="socials">
@@ -256,7 +293,7 @@
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="card text-center">
 						<div class="card-body">
-							<img alt="" class="img-fluid rounded-circle" src="images/profil-abdelali.jpg">
+							<img alt="" class="img-fluid rounded-circle" src="images/profil-abdelali.png">
 							<h3 class="card-title py-2">Abdelaali Ouhmou</h3>
 							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
 							<p class="socials">
@@ -272,16 +309,11 @@
 		</div>
 	</section>
 	
-	<section class="contact section-padding" id="contact">
+	<section class="footer-img section-padding" id="contact">
 		<div class="container mt-5 mb-5">
 			<div class="row">
 				<div class="col-md-12">
-					<!-- <div class="section-header text-center pb-5"> -->
-						<!-- <h2>Contact Us</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur<br>
-						adipisicing elit. Non, quo.</p> -->
 						<img src="./images/img-footer.jpg" alt="" width="100%" height="600vh">
-					<!-- </div> -->
 				</div>
 			</div>
 		
@@ -289,17 +321,18 @@
 	</section>
 
 	<div class="container">
-		<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+		<footer class="flex-wrap py-3 my-4 border-top" >
 		  <p class="col-md-4 mb-0 text-muted ">&copy; 2023 Pixel Warriors</p>
 	  
-		  <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none logo-link-footer">
+		  <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mt-3 me-md-auto link-dark text-decoration-none logo-link-footer">
 			<img src="./images/logo-img.png" alt="" width="40px" height="32px">
 		  </a>
 	  
 		  <ul class="nav col-md-4 justify-content-end">
 			<li class="nav-item"><a href="index.html" class="nav-link px-2 text-dark">Home</a></li>
-			<li class="nav-item"><a href="#" class="nav-link px-2 text-dark ">contact</a></li>
-			<li class="nav-item"><a href="#" class="nav-link px-2 text-dark">About</a></li>
+			<li class="nav-item"><a href="contact.html" class="nav-link px-2 text-dark ">contact</a></li>
+			<li class="nav-item"><a href="about.html" class="nav-link px-2 text-dark">About</a></li>
+			<li class="nav-item"><a href="question.html" class="nav-link px-2 text-dark">Qeustion</a></li>
 		  </ul>
 		</footer>
 	  </div>
@@ -309,5 +342,6 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
