@@ -43,7 +43,6 @@
 /* nav bar */
 #title-h1{
     color :#083E4E;
-    font-weight: bold;
     font-size: 4em;
     margin-bottom: 41%;
     margin-left: 20%;
@@ -62,6 +61,10 @@ h3{
 }
 #aside-h4{
     color: #003645;
+}
+#span-email{
+    color: #083E4E;
+    text-decoration:underline;
 }
 #aside-form{
      margin-top: 70px; 
