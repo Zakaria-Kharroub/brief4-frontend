@@ -4,22 +4,25 @@
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>HOME</title> 
-
+	<title>Contact</title> 
     <!-- link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 	<!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <!-- link css -->
-	<link href="css/style.css" rel="stylesheet">
+	<link href="/css/contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify@1.11.3/dist/toastify.min.css">
 
     <!-- icon font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify@1.11.3/dist/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify@1.11.3/dist/toastify.min.js"></script>
+    
 </head>
 <body>
+	<!-- start nav -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="index.html" style="color: #1F2532;"><span style="color: #B40C0C;" class="nav-brand-two">You</span>Meubles</a> 
@@ -28,7 +31,7 @@
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					
 					<li class="nav-item">
-						<a class="nav-link navigation" href="#">About</a>
+						<a class="nav-link navigation" href="about.html">About</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link ml-5 navigation" href="contact.html" >Contact</a>
@@ -49,49 +52,83 @@
 			</div>
 		</div>
 	</nav>
-       <!-- hero section -->
-       <figure style="background-image: url('/images/hero.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 150vh; margin-top: 40px;"></figure>
-    </header>
-    <main>
-        <div class="flex-container">
-            <section class="hero-section">
-                <h1 class="text-center">Contact us</h1>
-                <h2 id="title-h2" class="text-center">Nous serions ravis de vous assister</h2>
-            </section>
-            <figure class="image-container">
-                <img src="/images/image.png">
-                <img src="/images/tele.png">
-                <img src="/images/email.png">
-            </figure>
-            <aside class="form-container">
-                <h3>Nous sommes là pour vous!<br>Comment pouvons-nous vous aider?</h3>
-                <form action="/action_page.php" class="was-validated">
-                    <div class="form-group">
-                        <label for="fname">Nom et Prénom</label>
-                        <input type="text" id="fname" name="fname" class="form-cntrl" placeholder="Votre prénom..">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name "email" class="form-cntrl" placeholder="Votre email..">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <select id="subject" class="form-select">
-                            <option value="1">Renseignements sur les produits</option>
-                            <option value="2">Question concernant les produits</option>
-                            <option value="3">Autres</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" class="form-cntrl" placeholder="Votre message.." style="height:200px"></textarea>
-                    </div>
-                    <button type="submit" id="custom-btn" class="btn btn-danger">Envoyer</button>
-                </form>
-            </aside>
-        </div>
-       
-        <div class="Custom-bg"></div>
-    </main>
+	<!-- end nav -->
+    <!-- hero section -->
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh; background-image: url('/images/hero.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;"> 
+    <section class="hero-section">
+                <h1 id="title-h1" class="text-center">Contact us</h1>
+    </section>
+</div>
+<!-- hero section -->
+<div class="custom-container">
+    <div class="row">
+    <section class="image-container col-sm">
+        <figure>
+            <img src="/images/image.png">
+        </figure>
+        <h3>Service client</h3>
+        <p id="h3-p">Pour les demandes de renseignements <br>des consommateurs concernant
+            YouMeubles Store<br>
+            veuillez nous contacter au +212698764591<br> ou nous envoyer un e-mail à
+            YouMeubles@gmail.com </p>
+    </section>
+    <aside id="aside-form" class="form-container col-sm">
+        <h4 id="aside-h4">Nous sommes là pour vous!<br>Comment pouvons-nous vous aider?</h4>
+        <form action="" id="my-form" >
+    <div class="form-group">
+    <label id="form-lbl" for="fname">Nom et Prénom</label>
+    <input  type="text" id="fname" name="fname" class="form-control" placeholder="Votre prénom..">
+    <div id="name-error" class="error-message"></div>
+</div>
+<div class="form-group">
+    <label id="form-lbl" for="email">Email</label>
+    <input  type="text" id="email" name="email" class="form-control" placeholder="Votre email..">
+    <div id="email-error" class="error-message"></div>
+</div>
+<div class="form-group">
+    <label id="form-lbl" for="subject">Sujet</label>
+    <select  id="subject" class="form-select">
+        <option value="0">Sélectionnez un sujet</option>
+        <option value="1">Renseignements sur les produits</option>
+        <option value="2">Question concernant les produits</option>
+        <option value="3">Autres</option>
+    </select>
+    <div id="subject-error" class="error-message"></div>
+</div>
+<div class="form-group">
+    <label id="form-lbl" for="message">Message</label>
+    <textarea id="message" name="message" class="form-control" placeholder="Votre message.." style="height:200px"></textarea>
+    <div id="message-error" class="error-message"></div>
+</div>
+
+            <button type="submit" id="custom-btnn" class="btn btn-danger">Envoyer</button>
+        </form>
+    </aside>
+</div>
+</div>
+<div id="toast-container"></div>
+<div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh; background-image: url('/images/imgmym.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;"> 
+    <section class="hero-section">
+                <h4 class="text-center">Tu veux en savoir plus sur nous ?</h4>
+                <button type="submit" id="custom-btnn" class="btn btn-danger text-center">About us</button>
+    </section>
+</div>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted ">&copy; 2023 Pixel Warriors</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none logo-link-footer">
+        <img src="./images/logo-img.png" alt="" width="40px" height="32px">
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-dark">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark ">contact</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">About</a></li>
+      </ul>
+    </footer>
+    <script src="contact.js"></script>
+
+  </div>
 </body>
 </html>
