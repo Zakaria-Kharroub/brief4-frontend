@@ -4,71 +4,132 @@
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>HOME</title> 
-
+	<title>Contact</title> 
     <!-- link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 	<!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <!-- link css -->
-	<link href="css/style.css" rel="stylesheet">
+	
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify@1.11.3/dist/toastify.min.css">
 
     <!-- icon font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify@1.11.3/dist/toastify.min.css">
+    <link href="/css/cnt.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/toastify@1.11.3/dist/toastify.min.js"></script> -->
+    
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="index.html" style="color: #1F2532;"><span style="color: #B40C0C;" class="nav-brand-two">You</span>Meubles</a> 
-                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link navigation" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ml-5 navigation" href="#" >Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <form class="d-flex" style="padding-top: 5px;">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                              </form>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ml-5 navigation" href="login.html" >login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ml-5 navigation" href="singUp.html" >register</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- hero section -->
-        <figure style="background-image: url('/images/hero.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 150vh; margin-top: 40px;">
-            <div class="text-center" style="position: absolute; top: 60%; left: 55%; transform: translate(-50%, -50%); font-size: 9em; color: #B40C0C;">Contact</div>
+	<!-- start nav -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html" style="color: #1F2532;"><span style="color: #B40C0C;" class="nav-brand-two">You</span>Meubles</a> 
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					
+					<li class="nav-item">
+						<a class="nav-link navigation" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link ml-5 navigation" href="contact.html" >Contact</a>
+					</li>
+					<li class="nav-item">
+						<form class="d-flex" style="padding-top: 5px;">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                          </form>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link ml-5 navigation" href="login.html" >login</a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link ml-5 navigation" href="singUp.html" >register</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- end nav -->
+    <!-- hero section -->
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh; background-image: url('/images/hero.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;"> 
+    <section class="hero-section">
+                <h1 id="title-h1" class="text-center">Contact us</h1>
+    </section>
+</div>
+<!-- hero section -->
+<div class="custom-container">
+    <div class="row">
+    <section class="image-container col-sm">
+        <figure>
+            <img src="/images/image.png">
         </figure>
-    </header>
-    <main>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Service client</h1>
-                        <p>Pour les demandes de renseignements des consommateurs concernant YouMeubles Store, veuillez nous contacter au +212698764591 ou nous envoyer un e-mail à <a href="#" style="text-decoration: underline; color: #083E4E;">YouMeubles@gmail.com</a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Demande des informations sur les produits ou poser des questions</h2>
-                        <p>Pour toutes demandes commerciales, veuillez nous appeler au 31 70 221 3007 ou cliquez sur le bouton ci-dessous pour envoyer un e-mail.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-       
-    </main>
+        <h3>Service client</h3>
+        <p id="h3-p">Pour les demandes de renseignements <br>des consommateurs concernant
+            YouMeubles Store<br>
+            veuillez nous contacter au +212698764591<br> ou nous envoyer un e-mail à
+            YouMeubles@gmail.com </p>
+    </section>
+    <aside id="aside-form" class="form-container col-sm">
+        <h4 id="aside-h4">Nous sommes là pour vous!<br>Comment pouvons-nous vous aider?</h4>
+        <form action="" id="my-form" >
+    <div class="form-group">
+    <label id="form-lbl" for="fname">Nom et Prénom</label>
+    <input  type="text" id="fname" name="fname" class="form-control" placeholder="Votre prénom..">
+    <div id="name-error" class="error-message"></div>
+</div>
+<div class="form-group">
+    <label id="form-lbl" for="email">Email</label>
+    <input  type="text" id="email" name="email" class="form-control" placeholder="Votre email..">
+    <div id="email-error" class="error-message"></div>
+</div>
+<div class="form-group">
+    <label id="form-lbl" for="subject">Sujet</label>
+    <select  id="subject" class="form-select">
+        <option value="0">Sélectionnez un sujet</option>
+        <option value="1">Renseignements sur les produits</option>
+        <option value="2">Question concernant les produits</option>
+        <option value="3">Autres</option>
+    </select>
+    <div id="subject-error" class="error-message"></div>
+</div>
+<div class="form-group">
+    <label id="form-lbl" for="message">Message</label>
+    <textarea id="message" name="message" class="form-control" placeholder="Votre message.." style="height:200px"></textarea>
+    <div id="message-error" class="error-message"></div>
+</div>
+
+            <button type="submit" id="custom-btnn" class="btn btn-danger">Envoyer</button>
+        </form>
+    </aside>
+</div>
+</div>
+<div id="toast-container"></div>
+<div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh; background-image: url('/images/imgmym.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;"> 
+    <section class="hero-section">
+                <h4 class="text-center">Tu veux en savoir plus sur nous ?</h4>
+                <button type="submit" id="custom-btnn" class="btn btn-danger text-center">About us</button>
+    </section>
+</div>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted ">&copy; 2023 Pixel Warriors</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none logo-link-footer">
+        <img src="./images/logo-img.png" alt="" width="40px" height="32px">
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-dark">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark ">contact</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">About</a></li>
+      </ul>
+    </footer>
+    <script src="contact.js"></script>
+
+  </div>
 </body>
 </html>

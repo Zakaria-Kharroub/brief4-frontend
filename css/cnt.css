@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+/* nav bar */
+.navbar .getstarted {
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	line-height: 2.3;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.nav-brand-two{
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    border: 5px solid var(--whiteColor);
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+   border-bottom: 5px solid var(--redColor);
+   color: var(--redColor);
+   transition: 0.4s;
+}
+/* nav bar */
+#title-h1{
+    color :#083E4E;
+    font-weight: bold;
+    font-size: 4em;
+    margin-bottom: 41%;
+    margin-left: 20%;
+
+}
+.custom-container{
+    margin-top: 20px;
+}
+h3{
+    color: #003645;
+    margin-left: 33%;
+    margin-top: -6%;
+}
+#h3-p{
+    margin-left: 20%;
+}
+#aside-h4{
+    color: #003645;
+}
+#aside-form{
+     margin-top: 70px; 
+}
+#form-lbl{
+    font-weight: bold;
+}
+#fname, #message, #email, #subject{
+    border-color: #B40C0C;
+}
+#custom-btnn{
+    margin:3%;
+    margin-left: 50%;
+}
+.error-message{
+    color: red;
+
+}
+h4{
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 21%;
+}
