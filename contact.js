@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let isValid = true;
 
         const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        const nameRegex = /^[a-z0-9_-]{3,15}$/;
 
         if (nameInput.value.length < 3) {
             isValid = false;
@@ -22,6 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             nameError.textContent = "";
         }
+        if(!nameRegex.test(nameInput.value))
+        {
+            isValid = false;
+            nameError.textContent = "Veuillez entrer un nom valide";
+        } else {
+            nameError.textContent = "";
+        }
+        
         if (!emailRegex.test(emailInput.value)) {
             isValid = false;
             emailError.textContent = "Veuillez entrer une adresse e-mail valide";
@@ -41,14 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             messageError.textContent = "";
         }
-
-        if (isValid) {
-            Toastify({
-                text: "Votre message a été envoyé avec succès!",
-                duration: 9000,
-                gravity: "bottom",
-                backgroundColor: "green",
-            }).showToast();
+        if (isValid){
+           
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
+              
+              Toast.fire({
+                icon: 'success',
+                title: 'votre message a bien été envoyé'
+              })
         }
     });
 });
