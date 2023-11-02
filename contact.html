@@ -11,15 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 	<!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <!-- link css -->
-	
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify@1.11.3/dist/toastify.min.css">
-
     <!-- icon font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
  
+
+    <!-- link css -->
+    <link rel="stylesheet" href="css/cnt.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify@1.11.3/dist/toastify.min.css">
-    <link href="/css/cnt.css" rel="stylesheet">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/toastify@1.11.3/dist/toastify.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify@1.11.3/dist/toastify.min.js"></script>
     
 </head>
 <body>
@@ -71,7 +70,7 @@
         <p id="h3-p">Pour les demandes de renseignements <br>des consommateurs concernant
             YouMeubles Store<br>
             veuillez nous contacter au +212698764591<br> ou nous envoyer un e-mail à
-            YouMeubles@gmail.com </p>
+            <a href="#" id="span-email">YouMeubles@gmail.com</a> </p>
     </section>
     <aside id="aside-form" class="form-container col-sm">
         <h4 id="aside-h4">Nous sommes là pour vous!<br>Comment pouvons-nous vous aider?</h4>
@@ -111,7 +110,7 @@
 <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh; background-image: url('/images/imgmym.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;"> 
     <section class="hero-section">
                 <h4 class="text-center">Tu veux en savoir plus sur nous ?</h4>
-                <button type="submit" id="custom-btnn" class="btn btn-danger text-center">About us</button>
+                <input type="submit" id="custom-btnn" class="btn btn-danger text-center" value="About us">
     </section>
 </div>
 <div class="container">
@@ -128,8 +127,7 @@
         <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">About</a></li>
       </ul>
     </footer>
-    <script src="contact.js"></script>
-
   </div>
+  <script src="contact.js"></script>
 </body>
 </html>
