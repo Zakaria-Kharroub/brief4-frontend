@@ -231,6 +231,16 @@ footer{
 	}
 	
 }
+____________________________________thes parte it's for desplay page*/
 
-
+.product_img{
+  width: 100%;
+}
+.Produits_connexes_img{
+	height:60%;
+	display: flex;
+}
+.margin-left-p{
+	margin-left:60%;
+}
 
